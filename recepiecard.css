@@ -34,6 +34,8 @@
     border-radius: 12px;
     transition: transform 0.2s ease-in-out;
     margin-bottom: 15px;
+    object-fit: cover;
+    aspect-ratio: 16/9;
 }
 
 .recipe-card:hover img {
@@ -60,9 +62,11 @@
     border-radius: 16px;
     font-size: 0.9rem;
     font-weight: 600;
-    color:#ffffff ;
-    margin-top: auto;
-    transition: background-color 0.3s ease;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    transition: opacity 0.3s ease;
 }
 
 .recipe-card .badge.vegan {
@@ -80,5 +84,13 @@
 @media (max-width: 600px) {
     .recipes {
         grid-template-columns: 1fr;
+    }
+    
+    .recipe-card {
+        padding: 15px;
+    }
+    
+    .recipe-card h3 {
+        font-size: 1.2rem;
     }
 }
